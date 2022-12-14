@@ -27,6 +27,9 @@ INSERT INTO owners(full_name, age) VALUES ('Jodie Whittaker', 38);
 INSERT INTO species(name) VALUES ('Pokemon');
 INSERT INTO species(name) VALUES ('Digimon');
 
+UPDATE animals SET species_id=2 where name LIKE '%mon';
+UPDATE animals SET species_id=1 WHERE species_id IS null;
+
 UPDATE animals SET owner_id=1  where name= 'Agumon';
 UPDATE animals SET owner_id=2  where name='Gabumon' OR name='Pikachu';
 UPDATE animals SET owner_id=3  where name='Devimon' OR name='Plantmon';
