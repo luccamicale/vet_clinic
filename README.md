@@ -55,7 +55,7 @@ In order to run this project you need:
 
 ### Setup
 ```
-- To clone the repository run this command - " git clone git@github.com:taldr27/vet-clinic.git "
+- To clone the repository run this command - " git clone https://github.com/luccamicale/vet_clinic.git "
 - cd vet-clinic
 ```
 ## 👥 Authors <a name="authors"></a>
