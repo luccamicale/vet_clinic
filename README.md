@@ -60,7 +60,7 @@ In order to run this project you need:
 ```
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Diego Garcia**
+👤 **Lucca Micale**
 
 - GitHub: [@luccamicale]
 - LinkedIn: [luccamicale]
