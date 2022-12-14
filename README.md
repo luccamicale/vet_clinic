@@ -1,8 +1,15 @@
 # Vet Clinic Database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+Vet-Clinic is a project where you can find sql data about a vet clinic.
 
+🛠 Built With
+Tech Stack
+Developed using PostgreSql.
+
+Database
+Key Features
+Database contains information about animals**
+With the queries file you can filter the data**
 
 ## Getting Started
 
