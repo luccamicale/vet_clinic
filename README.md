@@ -1,42 +1,89 @@
-# Vet Clinic Database
+<a name="readme-top"></a>
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+<div align="center">
 
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
 
-## Authors
+</div>
+
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+
+<!-- PROJECT DESCRIPTION -->
+
+# Vet-Clinic <a name="about-project"></a>
+
+**Vet-Clinic** is a project where you can find sql data about a vet clinic.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Developed using PostgreSql.
+<details>
+  <summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+- Database contains information about animals**
+- With the queries file you can filter the data**
+## 💻 Getting Started <a name="getting-started"></a>
+> To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- You need to have git installed in your machine. Again you need to have `npm`, `node` installed in your computer.
+
+### Setup
+```
+- To clone the repository run this command - " git clone https://github.com/luccamicale/vet_clinic.git "
+- cd vet-clinic
+```
+## 👥 Authors <a name="authors"></a>
 
 👤 **Lucca Micale**
 
-- GitHub: [@luccamicale](https://github.com/luccamicale)
-- Twitter: [@luccamicale_](https://twitter.com/LuccaMicale_)
-- LinkedIn: [Lucca Micale](https://www.linkedin.com/in/luccamicale/)
+- GitHub: [@luccamicale]
+- LinkedIn: [luccamicale]
+- Twitter: [@luccamicale_]
 
-## 🤝 Contributing
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-## 📝 License
+I would like to thank to the code reviewers and my partners who are helping all the time.
 
-This project is [MIT](./MIT.md) licensed.
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
