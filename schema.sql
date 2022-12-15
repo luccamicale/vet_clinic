@@ -34,3 +34,12 @@ ADD owner_id INTEGER;
 ALTER TABLE animals
 ADD CONSTRAINT owner_id
 FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+
+
+CREATE TABLE vets (
+    id INTEGER GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
+    name VARCHAR,
+    age INTEGER,
+    date_of_graduation DATE
+);
