@@ -66,6 +66,12 @@ In order to run this project you need:
 - LinkedIn: [luccamicale]
 - Twitter: [@luccamicale_]
 
+👤 **Amare Kassa**
+
+- GitHub: [@amare1990]
+- LinkedIn: [amaremek]
+- Twitter: [@amaremek]
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
