@@ -45,3 +45,9 @@ CREATE TABLE visits(
   date_of_visit DATE,
   PRIMARY KEY(id)
 );
+
+
+/* Block#2 - Day#1 */
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
