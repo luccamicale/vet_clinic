@@ -26,7 +26,11 @@ CREATE TABLE invoice_items (id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
 unit_price DECIMAL, quantity INT, total_price DECIMAL, 
 invoice_id INT, treatment_id INT, 
 CONSTRAINT invoice_item FOREIGN KEY (treatment_id) REFERENCES treatments (id));
-ERROR:  relation "treatments" does not exist
+
+ALTER TABLE invoice_items
+ADD CONSTRAINT fk_invoice_id  
+FOREIGN KEY (invoice_id) 
+REFERENCES invoices (id);
 
 /*  Many to many relation table between treatments and medical_histories table */
 CREATE TABLE medical_histories_treatments(medical_history_id INT, 
