@@ -1,61 +1,57 @@
-/* Database schema to keep the structure of entire database. */
-
-CREATE TABLE animals (
-    id INTEGER,
-    name VARCHAR,
-    date_of_birth DATE,
-    escape_attempts INTEGER,
-    neutered BOOLEAN,
-    weight_kg DECIMAL,
-    species VARCHAR(100)
+CREATE TABLE owners(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  full_name VARCHAR(20),
+  age INT,
+  PRIMARY KEY(id)
 );
 
-CREATE TABLE owners (
-    id INTEGER GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
-    full_name VARCHAR,
-    age INTEGER
+CREATE TABLE species(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(20),
+  PRIMARY KEY(id)
 );
 
-CREATE TABLE species (
-    id INTEGER GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
-    name VARCHAR
+CREATE TABLE animals(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(20),
+  date_of_birth DATE,
+  escape_attempts INT,
+  neutered BOOLEAN,
+  weight_kg DECIMAL,
+  species_id INT REFERENCES species(id),
+  owner_id INT REFERENCES owners(id),
+  PRIMARY KEY(id)
 );
 
-ALTER TABLE animals
-DROP COLUMN species;
-
-ALTER TABLE animals
-ADD CONSTRAINT species_id
-FOREIGN KEY (species_id) REFERENCES species(id);
-
-ALTER TABLE animals
-ADD owner_id INTEGER;
-
-ALTER TABLE animals
-ADD CONSTRAINT owner_id
-FOREIGN KEY (owner_id) REFERENCES owners(id);
-
-
-
-CREATE TABLE vets (
-    id INTEGER GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
-    name VARCHAR,
-    age INTEGER,
-    date_of_graduation DATE
+CREATE TABLE vets(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(20),
+  age INT,
+  date_of_graduation DATE,
+  PRIMARY KEY(id)
 );
 
-CREATE TABLE specializations (
-    id_vet INTEGER NOT NULL,
-    id_species INTEGER NOT NULL,
-    PRIMARY KEY (id_vet, id_species),
-    FOREIGN KEY (id_vet) REFERENCES vets (id),
-    FOREIGN KEY (id_species) REFERENCES species (id)
+CREATE TABLE specializations(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  species_id INT REFERENCES species(id),
+  vet_id INT REFERENCES vets(id),
+  PRIMARY KEY(id)
 );
 
-CREATE TABLE visits (
-    id_vet INTEGER NOT NULL,
-    id_animals INTEGER NOT NULL,
-    visit_date DATE,
-    FOREIGN KEY (id_vet) REFERENCES vets (id),
-    FOREIGN KEY (id_animals) REFERENCES animals (id)
+CREATE TABLE visits(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  animal_id INT REFERENCES animals(id),
+  vet_id INT REFERENCES vets(id),
+  date_of_visit DATE,
+  PRIMARY KEY(id)
 );
+
+
+/* Block#2 - Day#1 */
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX animal_id_index on visits(animal_id);
+CREATE INDEX vet_id_index on visits(vet_id); 
+CREATE INDEX email_Index on owners(email); 
