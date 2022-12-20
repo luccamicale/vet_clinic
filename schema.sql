@@ -46,7 +46,6 @@ CREATE TABLE visits(
   PRIMARY KEY(id)
 );
 
-
 /* Block#2 - Day#1 */
 
 -- Add an email column to your owners table
