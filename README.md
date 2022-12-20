@@ -27,7 +27,8 @@
 
 # Vet-Clinic <a name="about-project"></a>
 
-**Vet-Clinic** is a project where you can find sql data about a vet clinic.
+**Vet-Clinic** is a project where you can find sql data about a vet clinic. 
+We add other file and use the create index and shema diagrams
 
 ## 🛠 Built With <a name="built-with"></a>
 
