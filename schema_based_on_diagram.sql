@@ -34,7 +34,6 @@ treatment_id INT, CONSTRAINT HIST_TREAT
 FOREIGN KEY(medical_history_id ) REFERENCES medical_histories(id), 
 CONSTRAINT treat_hist FOREIGN KEY (treatment_id) REFERENCES treatments(id));
 
-
 /* Create Index */
 CREATE INDEX ON medical_histories(patient_id);
 CREATE INDEX ON invoices(medical_history_id);
