@@ -36,7 +36,11 @@ CONSTRAINT treat_hist FOREIGN KEY (treatment_id) REFERENCES treatments(id));
 
 
 /* Create Index */
-CREATE INDEX ON patients(id);
-CREATE INDEX ON medical_histories(id);
-CREATE INDEX ON invoices(id);
-CREATE INDEX ON treatments(id);
+CREATE INDEX ON medical_histories(patient_id);
+CREATE INDEX ON invoices(medical_history_id);
+CREATE INDEX ON invoice_items (treatment_id);
+CREATE INDEX ON invoice_items (invoices_id);
+
+
+CREATE INDEX ON medical_histories_treatments (medical_history_id);
+CREATE INDEX ON medical_histories_treatments (treatment_id);
