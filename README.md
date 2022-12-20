@@ -63,7 +63,7 @@ In order to run this project you need:
 👤 **Lucca Micale**
 
 - GitHub: [@luccamicale]
-- LinkedIn: [luccamicale](https://github.com/luccamicale)
+- LinkedIn: [luccamicale](https://github.com/luccamicale)....
 - Twitter: [@luccamicale_]
 
 👤 **Amare Kassa**
