@@ -73,3 +73,7 @@ INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (2, 9, 'February 27, 2
 INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (2, 9, 'August 03, 2020');
 INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (3, 10, 'May 24, 2020');
 INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (1, 10, 'January 11, 2021');
+
+INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (2, 9, 'August 03, 2020');
+INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (3, 10, 'May 24, 2020');
+INSERT INTO visits(id_vet, id_animals, visit_date) VALUES (1, 10, 'January 11, 2021');
